@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="abioc" Version="0.7.0" />
+        <PackageReference Include="Autofac" Version="4.8.1" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+        <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.3.1" />
+        <PackageReference Include="DryIoc.Microsoft.DependencyInjection" Version="2.1.0" />
+        <PackageReference Include="DryIocZero" Version="4.0.0" />
+        <PackageReference Include="FactoryFactory" Version="0.1.2" />
+        <PackageReference Include="Grace.DependencyInjection.Extensions" Version="6.4.0" />
+        <PackageReference Include="Lamar" Version="1.1.2" />
+        <PackageReference Include="LightInject.Microsoft.DependencyInjection" Version="2.0.8" />
+        <PackageReference Include="Maestro.Microsoft.DependencyInjection" Version="2.1.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Specification.Tests" Version="2.1.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+        <PackageReference Include="Rezolver.Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
+        <PackageReference Include="Stashbox.Extensions.Dependencyinjection" Version="2.6.3" />
+        <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="1.4.0" />
+        <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="2.1.1" />
+        <PackageReference Include="xunit" Version="2.3.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="NotImplemented\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="NotImplemented\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="NotImplemented\**" />
+    </ItemGroup>
+
+</Project>
