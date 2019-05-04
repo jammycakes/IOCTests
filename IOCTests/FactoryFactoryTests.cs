@@ -1,4 +1,5 @@
 using System;
+using FactoryFactory;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace IOCTests
@@ -7,7 +8,7 @@ namespace IOCTests
     {
         protected override IServiceProvider CreateServiceProvider(IServiceCollection serviceCollection)
         {
-            return FactoryFactory.Configuration.CreateContainer(serviceCollection);
+            return serviceCollection.CreateFactoryFactory();
         }
     }
 }
